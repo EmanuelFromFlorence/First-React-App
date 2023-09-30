@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import React from 'react';
+import CarouselComponent from './carousel';
+
+import CardSection from './CardSection';
+import CardModel from './CardModel';
+import MenuHeader from './MenuHeader';
+import Footer from './Footer';
+import Bottom_bar from './components/bottom_bar';
+import AudioPlayer from './audioplayer';
+
+
+
 import './App.css';
 
-function App() {
+
+
+const App = () => {
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+
+      <main>
+        <MenuHeader/>
+        <CarouselComponent />
+        <AudioPlayer />
+        <CardSection />
+
+        <CardModel />
+        <bottom_bar/>
+        <Footer/>
+      </main>
+
+      
     </div>
   );
-}
+};
 
 export default App;
+
+
